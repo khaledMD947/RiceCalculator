@@ -4,7 +4,7 @@
     --accent: #27a2a7;
     --dark:#23272c ;
     --light:#bfebf9;
-    --success:#2e6021 ;
+    --success:#43520b ;
     --warning: #ED8936;
     --error: #F56565;
 }
@@ -200,7 +200,7 @@ body {
     background: var(--light);
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
     border: 1px solid #E2E8F0;
 }
 
@@ -231,7 +231,7 @@ body {
     padding: 12px;
     background: #61daeb;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 .result-icon {
