@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Rice Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="calculator-wrapper">
+        <div class="calculator-container">
+            <div class="calculator-header">
+                <div class="icon">🌾</div>
+                <h1>Rice Weight Calculator</h1>
+                <p>Calculate paddy and rice weights with precision</p>
+            </div>
+            
+            <form id="riceForm" class="calculator-form">
+                <div class="input-group floating">
+                    <input type="number" id="riceWeight" step="0.1" required>
+                    <label for="riceWeight">Paddy Weight of 20 Sq. Meter Area (kg)</label>
+                    <span class="input-icon">⚖️</span>
+                </div>
+                
+                <div class="input-group floating">
+                    <input type="number" id="moisture" step="0.1" min="0" max="100" required>
+                    <label for="moisture">Moisture Content (%)</label>
+                    <span class="input-icon">💧</span>
+                </div>
+                
+                <div class="input-group floating select-group">
+                    <select id="riceType" required>
+                        <option value=""></option>
+                        <option value="G">General </option>
+                        <option value="D">Demonstration</option>
+                    </select>
+                    <label for="riceType">Paddy Plot Type</label>
+                    <span class="input-icon">🌱</span>
+                </div>
+                
+                <button type="submit" class="calculate-btn">
+                    <span>Calculate</span>
+                    <svg class="arrow" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </form>
+            
+            <div id="result" class="result-container">
+                <div class="result-card">
+                    <h3>Results <span>(in Ton)</span></h3>
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <div class="result-icon">📦</div>
+                            <div>
+                                <p class="result-label">Dried Paddy Weight(Ton)</p>
+                                <p id="paddyResult" class="result-value">0.000</p>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-icon">🍚</div>
+                            <div>
+                                <p class="result-label">Rice Weight(Ton)</p>
+                                <p id="riceResult" class="result-value">0.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!-- New Footer Section -->
+        <footer class="app-footer">
+            <div class="footer-content">
+
+                <div class="footer-copyright">
+                    <p>© <span id="current-year">2025</span> Rice Calculator. All rights reserved.</p>
+                    <p> Designd By Md Khaled Hossain</p>
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
