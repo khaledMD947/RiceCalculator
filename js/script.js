@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const adjustment = riceType === 'D' ? 88 : 86;
             const calculated = (dryMatter * riceWeight) / adjustment;
             const paddyTons = calculated / 2;
-            const riceTons = paddyTons * 0.66;
+            const riceTons = paddyTons /3*2;
             
             // Display results
             document.getElementById('paddyResult').textContent = paddyTons.toFixed(3);
